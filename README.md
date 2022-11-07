@@ -5,7 +5,7 @@ The data can be found at:
 https://www.kaggle.com/datasets/yashpaloswal/fraud-detection-credit-card?select=creditcard.csv
 
 install the requirements:
-pip install requirements.txt 
+pip install -r requirements.txt
 
 To run the code, in the command prompt add the following command:
 python main.py
