@@ -10,10 +10,10 @@ class explaining_ML:
         shap_values = explainer(xtrain)
         return explainer, shap_values
 
-    def partial_dependency_plotting(self, model, xtrain, shap_values):
+    def partial_dependency_plotting(self, model, xtrain, shap_values, variable):
         # make a standard partial dependence plot
         shap.partial_dependence_plot(
-            "Sex", model.predict, xtrain, model_expected_value=True,
+            variable, model.predict, xtrain, model_expected_value=True,
             feature_expected_value=True, ice=False,
             shap_values=shap_values[self.sample_ind:self.sample_ind+1,:]
         )
