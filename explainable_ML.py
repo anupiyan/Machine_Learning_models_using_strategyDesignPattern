@@ -20,7 +20,7 @@ class explaining_ML:
         plt.show()
 
     def plotting_waterfall(self, shap_values):
-           shap.plots.waterfall(shap_values[self.sample_ind], show = True)
+        shap.plots.waterfall(shap_values[self.sample_ind], show = True)
         plt.show()
 
         
