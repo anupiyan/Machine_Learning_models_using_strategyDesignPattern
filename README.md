@@ -11,6 +11,8 @@ install the requirements:
 pip install -r requirements.txt
 
 set up the config file to: pass the data, select the machine learning algorithm and if you wanted to do predictions or explainability.
+
+
 To run the code, in the command prompt add the following command:
 python main.py
 
